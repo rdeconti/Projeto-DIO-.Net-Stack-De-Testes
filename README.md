@@ -16,7 +16,7 @@ Aula: https://web.digitalinnovation.one/project/implementando-sua-stack-de-teste
 
 Quer se sentir mais seguro nas entregas de suas aplicações? Aprenda a testar um projeto de crowdfunding (vaquinha online) desenvolvida em .Net Core com a arquitetura MVC. Você ira baixar uma aplicação completa feita por pelo expert e a sua missão será implementar a parte de testes desta aplicação. Veja na teoria e na prática os principais conceitos de testes para aumentar a qualidade de entrega de seus projetos com testes de unidade, integrados e TDD.
 
-# Detalhes
+# Detalhes obtidos das aulas
 
 - Banco de dados "in-memory"
 - Testes comuns (fixtures): executados com uma view válida e outra view inválida
@@ -27,7 +27,7 @@ Quer se sentir mais seguro nas entregas de suas aplicações? Aprenda a testar u
 - Cada entity tem validações para garantir a integridade do banco de dados
 - Para os testes são gerados dados válidos e inválidos (massa de teste)
 
- -***********************************************************************************************************************************************
+ -***************************************************************************************************************************
 
 - Teste de unidade: utilza o "XUNIT": [fact] define o caso de teste e [trait] documenta parametros e organiza os testes
 
@@ -46,13 +46,13 @@ Quer se sentir mais seguro nas entregas de suas aplicações? Aprenda a testar u
 - Também são testados os "controllers" para impedir que mesmo com dados inválidos o processo passe de uma view para outra sem apresentar erros
 - Para testar o "controller" é utilizado o "MOCK" que emula um determinado componente ("FAKE" gera dados e "MOCK" simula comportamento da classe)
 
--***********************************************************************************************************************************************
+-****************************************************************************************************************************
 
 - Testes de integração: teste a integração entre os módulos
 - Utiliza "FACTORY" para simular a aplicação
 - Verifica se as páginas são carregadas com os dados completos de acordo com os dados de teste
 
--***********************************************************************************************************************************************
+-****************************************************************************************************************************
 
 - Testes de automação de interface: realizados com Selenium
 - Utiliza DRIVER FACTORY
@@ -63,7 +63,7 @@ Quer se sentir mais seguro nas entregas de suas aplicações? Aprenda a testar u
 - Procurou os botões na página para saber se encontra a outra tela
 - A ferramenta simula o comportamento do usuário
 - Este tipo de teste é recomendado para os processos mais críticos da aplicação
-- ***********************************************************************************************************************************************
+- *****************************************************************************************************************************
 - TDD: primerio cria o teste e depois cria o código
 
 # Problemas encontrados e soluções
@@ -74,6 +74,22 @@ Quer se sentir mais seguro nas entregas de suas aplicações? Aprenda a testar u
 
 - Ao executar o projeto Vaquina.MVC.csproj o Visual Studio Code procura todos os testes existentes: forma encontrados 37 testes para serem executados
 
+## Telas dos testes executados
 
-## Teste: Incluir conta
-<img src="https://github.com/rdeconti/Projeto-DIO-.Net-Vaquinha-On-Line/blob/main/Teste-Incluir.jpg" />
+- Tela inicial
+<img src="https://github.com/rdeconti/Projeto-DIO-.Net-Vaquinha-On-Line/blob/main/Execution-tests/telas-aplicativo.jpg" />
+
+- Tela da doação
+<img src="https://github.com/rdeconti/Projeto-DIO-.Net-Vaquinha-On-Line/blob/main/Execution-tests/telas-aplicativo-doa%C3%A7%C3%A3o.jpg" />
+
+- Tela com a lista dos testes (utilizando a extensão ".NET TEST EXPLORER")
+<img src="https://github.com/rdeconti/Projeto-DIO-.Net-Vaquinha-On-Line/blob/main/Execution-tests/telas-lista-dos-testes.jpg" />
+
+- Tela iniciando a execução de um teste
+<img src="https://github.com/rdeconti/Projeto-DIO-.Net-Vaquinha-On-Line/blob/main/Execution-tests/telas-execu%C3%A7%C3%A3o-de-um-teste.jpg" />
+
+- Tela com o log de execução do teste
+<img src="https://github.com/rdeconti/Projeto-DIO-.Net-Vaquinha-On-Line/blob/main/Execution-tests/telas-execu%C3%A7%C3%A3o-de-um-teste-log.jpg" />
+
+- Tela com o resultado de um teste
+<img src="https://github.com/rdeconti/Projeto-DIO-.Net-Vaquinha-On-Line/blob/main/Execution-tests/telas-execu%C3%A7%C3%A3o-indivudual-dos-testes.jpg" />
